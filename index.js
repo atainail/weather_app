@@ -1,3 +1,5 @@
+window.onscroll = function () { window.scrollTo(0, 0); };
+
 let input = document.querySelector(".user_input");
 let error = document.querySelector(".error");
 let currTemp = document.querySelector(".temperature");
