@@ -3,9 +3,14 @@
     margin: 0;
  }
 
+ html {
+    min-width: 100%;
+    min-height: 100%;   
+ }
+
  body {
-    width: 100vw;
-    height: 100vh;
+    min-width: 100%;
+    min-height: 100%;
     background-image: linear-gradient(rgb(72, 145, 255), rgb(42, 91, 146));
     color: white;
     text-align: center;
@@ -134,8 +139,8 @@
 }
 
 .dynamic_bg {
-    min-width: 100vw;
-    min-height: 100vh;
+    min-width: 100%;
+    min-height: 100%;
     position: absolute;
     z-index: -1;  
     opacity: 50%;
@@ -155,7 +160,7 @@
         margin-top: 50px;
         display: block;
         position: relative;
-        height: 55%;
+        height: 50%;
         font-size: 15px;
     }
 
@@ -176,9 +181,10 @@
         display: flex;    
         margin: auto;
         margin-top: 20px;
+        margin-bottom: -35px;
         width: 100%;  
         position: absolute;
-        bottom: 0;
+        bottom: 0px;
     }
 
     .right_side {
