@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="dynamic_bg"></div>
+
+    <div class="header">
+        Welcome to my Weather App using the OpenWeather API.
+        (Disclaimer: API does not provide daily high/low temps)   
+    </div>
+
+
+<div class="search_area">
+    <input type="search" class="user_input" placeholder="Type City OR Country/State">
+    <div class="error">Please enter a valid location</div>
+</div>
+
+<div class="current_day">
+    <div class="left_side">
+
+        <div class="details">           
+            <img src="location.png" alt=""> 
+            <span class="city_country">-- </span>
+        </div>    
+
+        <div class="details">           
+            <img src="calendar.png" alt=""> 
+            <span class="current_day_name">-- </span>
+        </div>    
+
+        <div class="details">           
+            <img src="raindrop.png" alt=""> 
+            <span class="humidity">-- </span>
+        </div>
+            
+
+    </div>
+
+    <div class="icon_space">
+        <div class="current_day_icon">
+
+        </div>
+        
+        <div class="current_description">--</div>
+    </div>
+
+    <div class="right_side">
+        <div class="temperature">--</div>    
+        <div class="current_low_high">-- - --</div>
+    </div>
+ 
+</div>
+
+
+<div class="full_week">
+
+    <div class="weekday1 day">
+        <div class="icon">--</div>
+        <div class="name">--</div>
+        <div class="low_high">--</div>
+    </div>
+
+    <div class="weekday2 day">
+        <div class="icon">--</div>
+        <div class="name">--</div>
+        <div class="low_high">--</div>
+    </div>
+
+
+    <div class="weekday3 day">
+        <div class="icon">--</div>
+        <div class="name">--</div>
+        <div class="low_high">--</div>
+    </div>
+
+    <div class="weekday4 day">
+        <div class="icon">--</div>
+        <div class="name">--</div>
+        <div class="low_high">--</div>
+    </div>
+
+    <div class="weekday5 day">
+        <div class="icon">--</div>
+        <div class="name">--</div>
+        <div class="low_high">--</div>
+    </div>    
+
+</div>
+
+
+
+<script src="index.js"></script>
+
+</body>
+</html>

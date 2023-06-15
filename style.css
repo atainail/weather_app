@@ -1,0 +1,207 @@
+ * {
+    padding: 0;
+    margin: 0;
+ }
+
+ body {
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(rgb(72, 145, 255), rgb(42, 91, 146));
+    color: white;
+    text-align: center;
+    overflow: hidden;
+ }
+
+ .header {
+    margin: 30px 80px 30px 80px;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+}
+
+ .search_area {  
+    margin: auto;
+    width: 80%;
+    display: block;
+ }
+
+ .error {
+    display: none;
+    color: rgb(179, 0, 0);
+ }
+
+ .search_area input {
+    font-size: 15px;
+    letter-spacing: 1.5px;
+    background: rgba(255,255,255,0.2);
+    border: none;
+    padding: 13px 0 13px 5px;
+    width: 100%;
+    max-width: 500px;
+    border-radius: 5px; 
+ }
+
+ .search_area input:focus {
+    outline:none;
+    color: white;
+ }
+ .search_area input::placeholder {
+    color: white;
+ }
+
+.current_day { 
+    margin: auto;
+    margin-top: 20px;
+    width: 80%;
+    max-width: 650px;
+    height: 50%;
+    display: flex;
+}
+
+.left_side {
+    text-align: left;
+    margin: 20px 0 0 10px;
+    float: left;
+}
+
+.details {
+    margin-bottom: 10%;
+}
+
+.city_country {
+    font-size: 25px;
+}
+
+.current_day_name {
+    font-size: 22px;
+}
+
+.icon_space {
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.current_day_icon{
+    margin: auto;
+}
+
+.current_day_icon img {
+    max-width: 270px;
+    max-height: 270px;
+}
+
+.current_day .details img {
+    width: 20px;
+    height: 20px;
+}
+
+.icon img {
+    width: 100%;
+    height: 100%;    
+}
+
+
+.right_side {
+    float: right;
+}
+
+.temperature {
+    font-size: 70px;
+}
+
+.full_week {
+    margin: auto;
+    display: inline-flex;
+}
+
+.day {       
+    margin: auto;   
+    background-image: linear-gradient(rgba(255,255,255,0.1), rgba(30, 111, 232,0.1));
+    padding: 35px;
+    border-radius: 5px;
+    margin-right: 20px; 
+    max-width: 60px;
+    max-height: 100px;
+}
+
+.full_week .day .icon {
+    margin-top: -20px; 
+    max-width: 150px;
+    max-height: 150px;
+}
+
+.right_side {
+    margin-bottom: 10px;    
+}
+
+.dynamic_bg {
+    min-width: 100vw;
+    min-height: 100vh;
+    position: absolute;
+    z-index: -1;  
+    opacity: 50%;
+    right: 0;  
+    bottom: 0;
+}
+
+.dynamic_bg img{
+    position: fixed;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+@media (max-width: 768px) {
+    .current_day { 
+        margin: auto;
+        margin-top: 50px;
+        display: block;
+        position: relative;
+        height: 55%;
+        font-size: 15px;
+    }
+
+    .icon_space{
+        margin: auto;
+        margin-top: -10%;
+        margin-bottom: 10px;
+        width: 70%;
+        height: 70%;    
+    }
+
+    .current_day_icon img{
+        width: 95%;
+        height: 95%;
+    }
+
+    .left_side {
+        display: flex;    
+        margin: auto;
+        margin-top: 20px;
+        width: 100%;  
+        position: absolute;
+        bottom: 0;
+    }
+
+    .right_side {
+        float: none;
+    }
+
+    .temperature {
+        font-size: 50px;
+    }
+
+    .full_week {
+        margin-top: 5%;
+    }
+
+    .details {
+        margin: auto;
+        margin-bottom: 0; 
+        font-size: 20px;           
+    }
+   
+    .day {       
+        padding: 25px;
+        border-radius: 5px;
+        font-size: 14px;
+    }
+}
