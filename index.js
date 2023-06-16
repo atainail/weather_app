@@ -114,6 +114,8 @@ let displayData = (data) => {
       </video>`;    
     }  
 
+    dynamic_bg.muted = true;
+
     humidity.innerHTML = `${data.list[0].main.humidity}`;
 
     let index = days.indexOf(`${days[d.getDay() + 1]}`);
