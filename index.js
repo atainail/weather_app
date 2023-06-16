@@ -167,5 +167,5 @@ let displayData = (data) => {
     
 }
 
-console.log(`Weather Icons fromhttps://www.iconfinder.com/weather-icons?price=free
+console.log(`Weather Icons from https://www.iconfinder.com/weather-icons?price=free
 Background videos from https://www.pexels.com/search/videos/`)
