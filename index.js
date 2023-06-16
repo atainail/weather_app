@@ -46,7 +46,8 @@ let thunder = "forecast/thunder.png";
 let snowy = "forecast/snowy.png";
 
 document.addEventListener("keypress", function(e){
-    if(e.key === "Enter"){
+    if(e.key === "Enter"){       
+        inputmode = none;
         if(input.value == "" || input.value == null || input.value.length < 3){
             error.style.display = "block";
         } else {
