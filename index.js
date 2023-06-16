@@ -61,6 +61,7 @@ document.addEventListener("keypress", function(e){
 });
 
 let displayData = (data) => {
+    console.log(data.list)
     let d = new Date();
     const days = ['Sun', 'Mon', 'Tues', 'Wed', 'Thur', 'Fri', 'Sat'];
     const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
@@ -134,7 +135,8 @@ let displayData = (data) => {
         let day = `day${dayDiv}Icon`;   
         let weeklyDesc = data.list[listNum].weather[0].description;
         
-        if(weeklyDesc.includes("Sun") || weeklyDesc.includes("sun")){
+        if(weeklyDesc.includes("Sun") || weeklyDesc.includes("sun") || 
+        weeklyDesc.includes("Clear") || weeklyDesc.includes("clear")){
             return eval(day).innerHTML = `<img src ="${sunny}">`;             
         }
     
