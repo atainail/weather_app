@@ -75,7 +75,8 @@ let displayData = (data) => {
     currLowHigh.innerHTML = `H:${Math.trunc(data.list[0].main.temp_max)}°  L:${Math.trunc(data.list[0].main.temp_min)}°`;   
     let desc = data.list[0].weather[0].description;
     
-    if(desc.includes("Sun") || desc.includes("sun")){
+    if(desc.includes("Sun") || desc.includes("sun") ||
+    desc.includes("Clear") || desc.includes("clear")){
         currIcon.innerHTML = `<img src ="${sunny}">`;
         currDescription.innerHTML = `${desc}`;
         dynamic_bg.innerHTML = `<video autoplay playsinline muted loop class="dynamic_bg">
