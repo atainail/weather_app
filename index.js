@@ -46,8 +46,7 @@ let thunder = "forecast/thunder.png";
 let snowy = "forecast/snowy.png";
 
 document.addEventListener("keypress", function(e){
-    if(e.key === "Enter"){       
-        inputmode = none;
+    if(e.key === "Enter"){               
         if(input.value == "" || input.value == null || input.value.length < 3){
             error.style.display = "block";
         } else {
@@ -163,8 +162,7 @@ let displayData = (data) => {
         } else {
             index++; 
         }
-    }
-    
+    }   
 }
 
 console.log(`Weather Icons from https://www.iconfinder.com/weather-icons?price=free
