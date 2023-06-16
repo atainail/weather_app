@@ -77,7 +77,7 @@ let displayData = (data) => {
     if(desc.includes("Sun") || desc.includes("sun")){
         currIcon.innerHTML = `<img src ="${sunny}">`;
         currDescription.innerHTML = `${desc}`;
-        dynamic_bg.innerHTML = `<video autoplay muted loop class="dynamic_bg">
+        dynamic_bg.innerHTML = `<video autoplay playsinline muted loop class="dynamic_bg">
         <source src="forecast/sunny.mp4" type="video/mp4">
       </video>`;    
     }
@@ -85,7 +85,7 @@ let displayData = (data) => {
     else if(desc.includes("Rain") || desc.includes("rain")){
         currIcon.innerHTML = `<img src ="${rainy}">`;
         currDescription.innerHTML = `${desc}`;
-        dynamic_bg.innerHTML = `<video autoplay muted loop class="dynamic_bg">
+        dynamic_bg.innerHTML = `<video autoplay playsinline muted loop class="dynamic_bg">
         <source src="forecast/rainy.mp4" type="video/mp4">
       </video>`;    
     }
@@ -93,7 +93,7 @@ let displayData = (data) => {
     else if(desc.includes("Cloud") || desc.includes("cloud")){
         currIcon.innerHTML = `<img src ="${cloudy}">`;
         currDescription.innerHTML = `${desc}`;
-        dynamic_bg.innerHTML = `<video autoplay muted loop class="dynamic_bg">
+        dynamic_bg.innerHTML = `<video autoplay playsinline muted loop class="dynamic_bg">
         <source src="forecast/cloudy.mp4" type="video/mp4">
       </video>`;    
     } 
@@ -101,7 +101,7 @@ let displayData = (data) => {
     else if(desc.includes("Snow") || desc.includes("snow")){
         currIcon.innerHTML = `<img src ="${snowy}">`;
         currDescription.innerHTML = `${desc}`;
-        dynamic_bg.innerHTML = `<video autoplay muted loop class="dynamic_bg">
+        dynamic_bg.innerHTML = `<video autoplay playsinline muted loop class="dynamic_bg">
         <source src="forecast/snowy.mp4" type="video/mp4">
       </video>`;    
     }  
@@ -109,7 +109,7 @@ let displayData = (data) => {
     else if(desc.includes("Storm") || desc.includes("storm")){
         currIcon.innerHTML = `<img src ="${thunder}">`;
         currDescription.innerHTML = `${desc}`;
-        dynamic_bg.innerHTML = `<video autoplay muted loop class="dynamic_bg">
+        dynamic_bg.innerHTML = `<video autoplay playsinline muted loop class="dynamic_bg">
         <source src="forecast/thunder.mp4" type="video/mp4">
       </video>`;    
     }  
