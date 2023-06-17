@@ -61,7 +61,7 @@ document.addEventListener("keypress", function(e){
 });
 
 let displayData = (data) => {
-    console.log(data.list)
+    // console.log(data.list)
     let d = new Date();
     const days = ['Sun', 'Mon', 'Tues', 'Wed', 'Thur', 'Fri', 'Sat'];
     const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
@@ -157,17 +157,18 @@ let displayData = (data) => {
         }   
     }
 
-    for(let i = 1; i <= 5; i++){
-        weekday(i);
+    for(let i = 1; i <= 5; i++){     
         lowHigh(i);
-        icon(i, i);
+        icon(i, i); 
 
-        if(index >= 6){
+        if(index >= 6 || index == -1){
             index = 0;
-        } else {
+            weekday(i);           
+        } else {     
             index++; 
+            weekday(i); 
         }
-    }   
+    } 
 }
 
 console.log(`Weather Icons from https://www.iconfinder.com/weather-icons?price=free
